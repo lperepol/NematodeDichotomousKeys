@@ -6,9 +6,9 @@ import graphviz
 import time
 
 
-def graph_2():
-    #g = graphviz.Digraph('G', filename='GraphForFemales.gv', format='svg')
-    g = graphviz.Digraph('G', filename='GraphForFemales.gv', format='WebP')
+def graph():
+    g = graphviz.Digraph('G', filename='GraphForFemales.gv', format='svg')
+    #g = graphviz.Digraph('G', filename='GraphForFemales.gv', format='WebP')
     g.edge(r'Graph \nFor \nFemales', r'2', label=r'\nBody very swollen; \lthe adult female is wholly or \lpartly immobile in plant roots')
     g.edge(r'Graph \nFor \nFemales', '9', label=r'\nBody relatively slim; \lmobile animals')
     g.edge(r'2', '3', label=r'\lTail point still \lwell recognizable')
@@ -168,6 +168,6 @@ def graph_2():
     g.view()
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    graph_2()
+    graph()
 #g.edge(r'6', '15', label="<<table border='0' cellborder='0' cellpadding='3' bgcolor='white'><tr><td bgcolor='black' align='center' colspan='2'><font color='white'>State #0</font></td></tr><tr><td align='left' port='r0'>&#40;0&#41; s -&gt; &bull;e $ </td></tr><tr><td align='left' port='r1'>&#40;1&#41; e -&gt; &bull;l '=' r </td></tr><tr><td align='left' port='r2'>&#40;2&#41; e -&gt; &bull;r </td></tr><tr><td align='left' port='r3'>&#40;3&#41; l -&gt; &bull;'*' r </td></tr><tr><td align='left' port='r4'>&#40;4&#41; l -&gt; &bull;'n' </td></tr><tr><td align='left' port='r5'>&#40;5&#41; r -&gt; &bull;l </td></tr></table>>")
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
